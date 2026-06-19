@@ -1,0 +1,11 @@
+# kinqimen은 sxtwl==2.0.6 / ephem==4.1.3 을 핀하지만, 이 버전들은 Python 3.11용
+# 바이너리 휠이 없어 소스 빌드(컴파일러 필요)로 실패한다. 휠이 제공되는 상위 버전을
+# 여기서 먼저 설치하고, kinqimen은 --no-deps 로 설치한다(README 참고).
+sxtwl==2.0.7
+ephem==4.2.1
+pillow>=10.0
+mcp>=1.2
+
+# 2단계로 설치(상류 핀 우회):
+#   pip install -r requirements.txt
+#   pip install --no-deps kinqimen==0.0.6.6

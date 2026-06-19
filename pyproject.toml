@@ -1,0 +1,22 @@
+[project]
+name = "mcp-qimen"
+version = "1.0.0"
+description = "Qi Men Dun Jia (奇門遁甲) MCP server — 9-palace plate over stdio."
+readme = "README.md"
+license = { text = "MIT" }
+# sxtwl/ephem 바이너리 휠 제약으로 Windows에서는 Python 3.10/3.11 권장.
+requires-python = ">=3.10,<3.12"
+dependencies = [
+    "sxtwl==2.0.7",
+    "ephem==4.2.1",
+    "pillow>=10.0",
+    "mcp>=1.2",
+    # kinqimen은 상류 핀(sxtwl==2.0.6/ephem==4.1.3) 때문에 --no-deps 로 별도 설치:
+    #   pip install --no-deps kinqimen==0.0.6.6
+]
+
+[project.scripts]
+mcp-qimen = "server:main"
+
+[tool.setuptools]
+py-modules = ["server", "qimen_core"]
