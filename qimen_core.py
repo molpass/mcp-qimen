@@ -87,20 +87,12 @@ def format_text(r: dict) -> str:
 
 
 # ---- PNG 렌더 ----
-_FONT_CANDIDATES = [
-    "C:/Windows/Fonts/malgun.ttf",
-    "C:/Windows/Fonts/batang.ttc",
-    "C:/Windows/Fonts/gulim.ttc",
-    "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
-    "/usr/share/fonts/truetype/nanum/NanumGothic.ttf",
-]
+# repo 동봉 폰트를 명시적으로 로드(시스템 폰트 비의존, 기본 폰트 금지).
+_FONT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "NotoSansCJK-Regular.otf")
 
 
 def _font(size: int) -> ImageFont.FreeTypeFont:
-    for p in _FONT_CANDIDATES:
-        if os.path.exists(p):
-            return ImageFont.truetype(p, size)
-    return ImageFont.load_default()
+    return ImageFont.truetype(_FONT_PATH, size)
 
 
 _W = 1080
