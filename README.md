@@ -86,6 +86,29 @@ python examples/generate-example.py   # examples/qimen_example.png 재생성
 
 페어링 스킬: [`skill/qimen.skill.md`](skill/qimen.skill.md).
 
+## About / 제작
+
+**Hermes Agent용 MCP** — molpass의 바이브 코딩(vibe coding) 프로젝트.
+
+- 아이디어·방향: **molpass (이정훈)** · https://zeolinex.com
+- 기획: **Claude (Chat)**
+- 개발: **Claude Code**
+
+자가 호스팅 [Hermes Agent](https://github.com/NousResearch/hermes-agent)에 도구로 붙여 쓰는 MCP 서버입니다.
+
+같은 모음:
+- [mcp-saju](https://github.com/molpass/mcp-saju) — 사주명리 만세력
+- [mcp-qr](https://github.com/molpass/mcp-qr) — QR 코드 생성
+- [mcp-biorhythm](https://github.com/molpass/mcp-biorhythm) — 바이오리듬
+- [mcp-astrology](https://github.com/molpass/mcp-astrology) — 서양 점성술 네이탈 차트
+- [mcp-ziwei](https://github.com/molpass/mcp-ziwei) — 자미두수 명반
+- [mcp-numerology](https://github.com/molpass/mcp-numerology) — 수비학
+- [mcp-liuren](https://github.com/molpass/mcp-liuren) — 대육임
+- [mcp-qimen](https://github.com/molpass/mcp-qimen) — 기문둔갑
+- [mcp-taiyi](https://github.com/molpass/mcp-taiyi) — 태을신수
+- [mcp-weather](https://github.com/molpass/mcp-weather) — 한국 날씨·미세먼지
+- [mcp-newsfeed](https://github.com/molpass/mcp-newsfeed) — 한국 주요뉴스
+
 ## License
 
 MIT

@@ -2,6 +2,7 @@
 name = "mcp-qimen"
 version = "1.0.0"
 description = "Qi Men Dun Jia (奇門遁甲) MCP server — 9-palace plate over stdio."
+keywords = ["mcp", "model-context-protocol", "hermes-agent", "claude", "vibe-coding", "korean", "telegram", "fortune-telling", "qimen", "divination"]
 readme = "README.md"
 license = { text = "MIT" }
 # sxtwl/ephem 바이너리 휠 제약으로 Windows에서는 Python 3.10/3.11 권장.
